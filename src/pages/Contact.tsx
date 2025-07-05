@@ -62,7 +62,7 @@ ${formData.message}
     },
     {
       name: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/sibashis-mishra-087088221/',
+      url: 'https://www.linkedin.com/in/sibashis-mishra-087088221',
       icon: <LinkedinIcon className="w-6 h-6" />,
     },
     {
@@ -87,22 +87,37 @@ ${formData.message}
           <p className="text-muted-foreground mb-8">
             Feel free to reach out through the contact form or connect with me on
             social media. I'm always open to discussing new projects, opportunities,
-            or partnerships.
+            or partnerships in healthcare technology and full-stack development.
           </p>
 
-          <div className="space-y-4">
-            {socialLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
-              >
-                {link.icon}
-                <span>{link.name}</span>
-              </a>
-            ))}
+          <div className="space-y-6">
+            <div className="space-y-2">
+              <h4 className="font-semibold">Location</h4>
+              <p className="text-muted-foreground">Baleshwar, Odisha, 756043</p>
+            </div>
+            
+            <div className="space-y-2">
+              <h4 className="font-semibold">Phone</h4>
+              <p className="text-muted-foreground">+91 8117023515</p>
+            </div>
+
+            <div className="space-y-2">
+              <h4 className="font-semibold">Connect</h4>
+              <div className="space-y-3">
+                {socialLinks.map((link) => (
+                  <a
+                    key={link.name}
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    {link.icon}
+                    <span>{link.name}</span>
+                  </a>
+                ))}
+              </div>
+            </div>
           </div>
         </motion.div>
 

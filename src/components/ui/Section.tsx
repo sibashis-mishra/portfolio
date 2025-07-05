@@ -38,9 +38,9 @@ const Section = ({ children, title, subtitle, className = '', id, noPadding }: S
     >
       <motion.div
         variants={containerVariants}
-        initial="hidden"
+        initial="visible"
         whileInView="visible"
-        viewport={{ once: true, margin: '-100px' }}
+        viewport={{ once: true, margin: '-50px' }}
         className="container mx-auto px-4"
       >
         {(title || subtitle) && (

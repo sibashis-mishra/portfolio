@@ -4,128 +4,85 @@ import Section from '../components/ui/Section';
 const Experience = () => {
   const experiences = [
     {
-      company: 'Tech Company A',
-      role: 'Senior Full Stack Developer',
-      period: 'Jan 2022 - Present',
+      company: 'Truliacare India',
+      role: 'Technologist',
+      period: '04/2024 - Present',
+      location: 'Nagpur, Maharashtra',
       description: [
-        'Led the development of a microservices-based e-commerce platform serving 100k+ users',
-        'Implemented CI/CD pipelines reducing deployment time by 60%',
-        'Mentored junior developers and conducted code reviews',
+        'Lead development projects utilizing MERN stack, Next.js, PostgreSQL, and AWS, ensuring scalability and optimal performance',
+        'Optimize cloud infrastructure, enhancing application performance and reducing costs',
+        'Handle CI/CD deployments using Git and AWS App Runner, automating build and release pipelines for seamless and scalable application delivery',
+        'Mentor junior developers, fostering technical innovation and knowledge sharing',
+        'Cultivate and manage client relationships, delivering solutions aligned with business goals',
       ],
     },
     {
-      company: 'Tech Company B',
-      role: 'Full Stack Developer',
-      period: 'Mar 2020 - Dec 2021',
+      company: 'Truliacare India',
+      role: 'Associate Technologist',
+      period: '01/2023 – 03/2024',
+      location: 'Nagpur, Maharashtra',
       description: [
-        'Developed and maintained multiple React-based web applications',
-        'Optimized database queries resulting in 40% faster load times',
-        'Integrated third-party APIs and payment gateways',
+        'Engineered a robust Appointment Booking Application using Next.js, enhancing scheduling efficiency',
+        'Designed and implemented a comprehensive Patient Management Dashboard with MERN stack, streamlining patient data management',
+        'Deployed and optimized applications on AWS, achieving a 90% cost reduction',
+        'Engaged directly with clients to ensure solutions met their business needs and exceeded expectations',
       ],
     },
     {
-      company: 'Tech Company C',
-      role: 'Frontend Developer',
-      period: 'Jun 2019 - Feb 2020',
+      company: 'Truliacare India',
+      role: 'Intern Technologist',
+      period: '07/2022 - 01/2023',
+      location: 'Nagpur, Maharashtra',
       description: [
-        'Built responsive user interfaces using React and TypeScript',
-        'Implemented state management using Redux and Context API',
-        'Collaborated with UX designers to improve user experience',
+        'Developed a Code Assessment Portal from scratch using the MERN stack, improving assessment processes',
+        'Collaborated with the team to build and deploy key projects, contributing to overall project success',
+      ],
+    },
+    {
+      company: 'PXE, DRDO',
+      role: 'Intern',
+      period: '06/2022 - 07/2022',
+      location: 'Balasore, Odisha',
+      description: [
+        'Directed research and data compilation, leading the team to complete critical projects',
+        'Created an Inventory & Project Management System using MERN stack, enhancing organizational efficiency',
       ],
     },
   ];
 
-  const skills = {
-    'Frontend Development': [
-      'React.js',
-      'TypeScript',
-      'Next.js',
-      'Redux',
-      'Tailwind CSS',
-      'Material-UI',
-    ],
-    'Backend Development': [
-      'Node.js',
-      'Express.js',
-      'MongoDB',
-      'PostgreSQL',
-      'RESTful APIs',
-      'GraphQL',
-    ],
-    'DevOps & Tools': [
-      'AWS',
-      'Docker',
-      'Git',
-      'CI/CD',
-      'Jest',
-      'Cypress',
-    ],
-  };
-
   return (
-    <>
-      <Section
-        title="Professional Experience"
-        subtitle="My journey in software development"
-      >
-        <div className="max-w-3xl mx-auto">
-          {experiences.map((exp, index) => (
-            <motion.div
-              key={exp.company}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.2 }}
-              viewport={{ once: true }}
-              className="relative pl-8 pb-12 last:pb-0"
-            >
-              <div className="absolute left-0 top-0 h-full w-px bg-border">
-                <div className="absolute top-2 -left-1.5 h-3 w-3 rounded-full bg-primary" />
-              </div>
-              <div className="space-y-2">
-                <span className="text-sm text-muted-foreground">{exp.period}</span>
-                <h3 className="text-xl font-semibold">{exp.role}</h3>
-                <h4 className="text-lg text-primary">{exp.company}</h4>
-                <ul className="list-disc list-inside space-y-1 text-muted-foreground">
-                  {exp.description.map((item, i) => (
-                    <li key={i}>{item}</li>
-                  ))}
-                </ul>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-      </Section>
-
-      <Section
-        title="Skills & Expertise"
-        subtitle="Technologies and tools I specialize in"
-        className="bg-accent/20"
-      >
-        <div className="grid md:grid-cols-3 gap-8">
-          {Object.entries(skills).map(([category, items]) => (
-            <motion.div
-              key={category}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="space-y-4"
-            >
-              <h3 className="text-xl font-semibold text-center mb-6">{category}</h3>
-              <div className="flex flex-wrap gap-2 justify-center">
-                {items.map((skill) => (
-                  <span
-                    key={skill}
-                    className="px-3 py-1 rounded-full bg-background border text-sm"
-                  >
-                    {skill}
-                  </span>
+    <Section
+      title="Professional Experience"
+      subtitle="My journey in software development"
+    >
+      <div className="max-w-4xl mx-auto">
+        {experiences.map((exp, index) => (
+          <motion.div
+            key={`${exp.company}-${exp.role}`}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: index * 0.2 }}
+            viewport={{ once: true }}
+            className="relative pl-8 pb-12 last:pb-0"
+          >
+            <div className="absolute left-0 top-0 h-full w-px bg-border">
+              <div className="absolute top-2 -left-1.5 h-3 w-3 rounded-full bg-primary" />
+            </div>
+            <div className="space-y-2">
+              <span className="text-sm text-muted-foreground">{exp.period}</span>
+              <h3 className="text-xl font-semibold">{exp.role}</h3>
+              <h4 className="text-lg text-primary">{exp.company}</h4>
+              <p className="text-sm text-muted-foreground">{exp.location}</p>
+              <ul className="list-disc list-inside space-y-1 text-muted-foreground">
+                {exp.description.map((item, i) => (
+                  <li key={i}>{item}</li>
                 ))}
-              </div>
-            </motion.div>
-          ))}
-        </div>
-      </Section>
-    </>
+              </ul>
+            </div>
+          </motion.div>
+        ))}
+      </div>
+    </Section>
   );
 };
 

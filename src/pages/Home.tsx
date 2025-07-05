@@ -36,15 +36,15 @@ const Home = () => {
             variants={itemVariants}
             className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-primary/60 text-transparent bg-clip-text"
           >
-            MERN Stack & AWS Developer
+            Full-Stack Developer & AWS Expert
           </motion.h1>
           
           <motion.p
             variants={itemVariants}
             className="text-lg md:text-xl text-muted-foreground mb-8"
           >
-            Building scalable web applications with modern technologies.
-            Passionate about creating seamless user experiences and robust backend systems.
+            Building scalable web solutions with MERN stack and cloud technologies.
+            Expert in crafting user-centric interfaces and integrating complex APIs with 100% client satisfaction.
           </motion.p>
 
           <motion.div
@@ -79,7 +79,7 @@ const Home = () => {
               <GithubIcon className="w-6 h-6" />
             </a>
             <a
-              href="https://www.linkedin.com/in/sibashis-mishra-087088221/"
+              href="https://www.linkedin.com/in/sibashis-mishra-087088221"
               target="_blank"
               rel="noopener noreferrer"
               className="text-foreground/60 hover:text-primary transition-colors"
