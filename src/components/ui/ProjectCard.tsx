@@ -5,7 +5,6 @@ interface ProjectCardProps {
   description: string;
   tags: string[];
   category: string;
-  type: 'client' | 'personal';
 }
 
 const ProjectCard = ({
@@ -13,7 +12,6 @@ const ProjectCard = ({
   description,
   tags,
   category,
-  type,
 }: ProjectCardProps) => {
   return (
     <motion.div

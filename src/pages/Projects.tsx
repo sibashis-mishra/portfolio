@@ -12,28 +12,24 @@ const Projects = () => {
       description: 'A robust appointment scheduling system built with Next.js, enhancing scheduling efficiency for healthcare providers. Features include real-time availability, automated reminders, and integration with healthcare APIs.',
       tags: ['Next.js', 'React', 'TypeScript', 'Healthcare'],
       category: 'Healthcare',
-      type: 'client' as const,
     },
     {
       title: 'Patient Management Dashboard',
       description: 'A comprehensive patient data management system using MERN stack, streamlining patient information and care coordination. Includes HIPAA-compliant data handling and advanced reporting features.',
       tags: ['MERN Stack', 'MongoDB', 'Express', 'React', 'Node.js'],
       category: 'Healthcare',
-      type: 'client' as const,
     },
     {
       title: 'Healthcare API Integration',
       description: 'Integration of Advanced MD API and GoHighLevel API with HIPAA compliance for secure healthcare data management. Implements secure authentication and data encryption.',
       tags: ['API Integration', 'HIPAA Compliance', 'Advanced MD API', 'GoHighLevel API'],
       category: 'Healthcare',
-      type: 'client' as const,
     },
     {
       title: 'Cloud Infrastructure Optimization',
       description: 'AWS-based cloud infrastructure optimization achieving 90% cost reduction with automated CI/CD pipelines. Implements auto-scaling, load balancing, and monitoring solutions.',
       tags: ['AWS', 'CI/CD', 'Docker', 'Git', 'AWS App Runner'],
       category: 'Infrastructure',
-      type: 'client' as const,
     },
   ];
 
@@ -43,21 +39,18 @@ const Projects = () => {
       description: 'A full-stack assessment platform developed from scratch using MERN stack, improving coding evaluation processes. Features include real-time code execution, automated testing, and detailed analytics.',
       tags: ['MERN Stack', 'MongoDB', 'Express', 'React', 'Node.js'],
       category: 'Full-Stack',
-      type: 'personal' as const,
     },
     {
       title: 'Inventory & Project Management System',
       description: 'A comprehensive management system for DRDO, enhancing organizational efficiency with MERN stack implementation. Includes real-time tracking, reporting, and resource optimization.',
       tags: ['MERN Stack', 'MongoDB', 'Express', 'React', 'Node.js'],
       category: 'Management',
-      type: 'personal' as const,
     },
     {
       title: 'Portfolio Website',
       description: 'A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS. Features smooth animations, dark mode, and contact form integration.',
       tags: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
       category: 'Frontend',
-      type: 'personal' as const,
     },
   ];
 
