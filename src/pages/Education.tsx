@@ -23,20 +23,20 @@ const Education = () => {
     },
   ];
 
-  const certifications = [
-    {
-      name: 'AWS Cloud Practitioner',
-      issuer: 'Amazon Web Services',
-      year: '2024',
-      description: 'Certified in AWS cloud fundamentals and best practices for cloud architecture.',
-    },
-    {
-      name: 'MongoDB Database Administrator',
-      issuer: 'MongoDB University',
-      year: '2023',
-      description: 'Certified in MongoDB database administration and optimization techniques.',
-    },
-  ];
+  // const certifications = [
+  //   {
+  //     name: 'AWS Cloud Practitioner',
+  //     issuer: 'Amazon Web Services',
+  //     year: '2024',
+  //     description: 'Certified in AWS cloud fundamentals and best practices for cloud architecture.',
+  //   },
+  //   {
+  //     name: 'MongoDB Database Administrator',
+  //     issuer: 'MongoDB University',
+  //     year: '2023',
+  //     description: 'Certified in MongoDB database administration and optimization techniques.',
+  //   },
+  // ];
 
   return (
     <>
@@ -84,7 +84,7 @@ const Education = () => {
         </div>
       </Section>
 
-      <Section
+      {/* <Section
         title="Certifications"
         subtitle="Professional certifications and continuous learning"
         className="bg-accent/20"
@@ -110,7 +110,7 @@ const Education = () => {
             </motion.div>
           ))}
         </div>
-      </Section>
+      </Section> */}
 
       <Section
         title="Skills & Technologies"
